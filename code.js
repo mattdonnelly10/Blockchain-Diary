@@ -7,7 +7,7 @@ var provider = new ethers.providers.Web3Provider(
   web3.currentProvider,
   "ropsten"
 );
-var MoodContractAddress = "0xFB933b9A9a824Bb2ca5762EF72Fc4827b8873E9B";
+var MoodContractAddress = "YOUR-CONTRACT-ADDRESS";
 
 var MoodContractABI = [
   {
@@ -42,7 +42,7 @@ var signer;
 
 provider.listAccounts().then(function (accounts) {
   signer = provider.getSigner(
-    accounts[0]
+    accounts[YOUR-METAMASK-ADDRESS]
   );
   MoodContract = new ethers.Contract(
     MoodContractAddress,
